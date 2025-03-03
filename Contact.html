@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Hridisha Arif -->
+<!-- File: Contact.html -->
+<!-- Date Created: 02-10-2025 -->
+<!-- Description: A webpage that contains a form for people to contact me -->
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage containing information about my personal portfolio">
+    <meta name="keywords" content="portfolio, programming, projects, resume, contact">
+    <meta name="author" content="Hridisha Arif">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assignment1.css">
+</head>
+<body>
+    <!-- Main container for contact page -->
+    <div id="maincontact">
+        <!-- Page header containing site title and navigation -->
+        <header>
+            <h1>Contact Me</h1>
+                <p id="middle">I'll be glad to answer your questions!</p>
+
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Contact.html">Contact Me</a>
+            </nav>
+        </header>		
+        
+        <!-- Main content area containing the contact form -->
+        <main>
+            <form method="post" action="javascript:void(0);">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td>
+                                <input id="name" type="text" name="name" placeholder="Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id= "email" type="email" name="email" placeholder="Email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="subject" type="text" name="Subject" placeholder="Subject">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><textarea id= "textarea" name="message" placeholder="Your Message"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input id="submitbutton" type="submit" value="Submit">
+            </form>
+        </main>
+        
+        <!-- Page footer with copyright information -->
+        <footer>
+            <div class="footerdiv">
+                <p>&copy; Hridisha Arif, 2025. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

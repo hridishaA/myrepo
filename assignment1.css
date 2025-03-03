@@ -1,0 +1,505 @@
+/* CSS Document 
+<!-- Name: Hridisha Arif -->
+<!-- File: index.css -->
+<!-- Date Created: 02-11-2025 -->
+/* 
+This code utilizes CSS styling to build flexible and responsive layouts 
+to assist with cross browser compatibility.
+*/
+
+/* CSS Variables for consistent color scheme throughout the site */
+:root {
+    --primary-color: #32455a;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-bg: #f5f6fa;
+}
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling with asymmetrical border radius */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0 35px 0 0;
+}
+
+/* Navigation bar within header */
+.header-nav {
+    font-size: 12pt; 
+    color: white;
+    padding: 1rem;
+    margin-top: 12px;
+    min-width: 400px; /* sets minimum width for navigation */
+}
+
+/* Navigation links styling */
+.header-nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    display: inline-table;
+    border: 1px solid #99a1c1;
+    border-radius: 12px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 2px;
+    margin:2px;
+}
+
+.header-nav a:hover {
+    color: black;
+    background-color: #99a1c1
+}
+
+/* Footer styling */
+.footerdiv {
+    font-size: 8pt;
+    text-align: right;
+}
+
+
+/* -- INDEX PAGE SPECIFIC STYLES -- */
+
+/* Profile picture styling */
+#mypic {
+
+    width: 30vw;
+    height: auto;
+    margin-top: 12px;
+}
+
+/* Main heading on index page */
+.mainindex h1 {
+    font-size: 40pt;
+    background: #447298;
+    border:3px solid #1b2c52;
+    border-radius: 29px 0 29px 0;
+    color: rgba(255, 255, 255, 0.911);
+    padding-left: 25px;
+}
+
+/* Secondary headings on index page */
+.mainindex h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    margin-top: 10px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+}
+
+/* List items on index page */
+.mainindex li {
+    margin-left: 30px;
+}
+
+/* Bottom section of index page */
+.bottompage #collegename {
+    color: var(--accent-color);
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+
+.bottompage h3 {
+
+    font-size: 15pt;
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-top: 2px solid var(--accent-color);
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+#website a { 
+    text-decoration: none;
+}
+
+/* Website link styling */
+#website a:hover {
+    font-weight: 500;
+}
+
+#end {
+    font-size: 10pt;
+    padding-top: 5px;
+    margin-top: 15px;
+    border-top: 2px solid var(--accent-color);
+    text-align: center;
+}
+
+/* Footer section with hover effects */
+#end a {
+    color: white;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    display: inline-table;
+    border: 1px solid #99a1c1;
+    border-radius: 12px;
+    padding: 3px 8px;
+    margin:2px;
+    font-size: 10pt;
+}
+
+#end a:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+
+/* -- RESUME PAGE SPECIFIC STYLES -- */
+
+/* Main heading on resume page */
+.mainresume h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1.1rem;
+}
+
+/* Secondary headings on resume page */
+.mainresume h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+/* List items on resume page */
+.mainresume li {
+    margin-left: 2rem;
+}
+
+/* Resume page navigation */
+#navresume {
+    padding-bottom: 1px;
+    border: 3px solid rgba(50, 116, 160, 0.811);
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+/* Contact information section */
+.contact-info {
+    padding-top: 0.5px;
+    margin-bottom: 1rem;
+}
+
+/* Contact links with hover effects */
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 12px;
+}
+
+.contact-info a:hover {
+    color: black;
+    background-color: #99a1c1
+}
+
+/* Content sections styling */
+section {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 0.5rem;
+}
+
+/* Education section item */
+.education-item {
+    margin-bottom: 0.8rem;
+}
+
+/* Education item heading */
+.education-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.2rem;
+}
+
+/* Work experience section item */
+.work-experience-item {
+    margin-bottom: 1.2rem;
+}
+
+/* Work experience item heading */
+.work-experience-item h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.2rem;
+}
+
+/* Company information in work experience */
+.work-experience-item .company-info {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills section grid layout and styling */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skill-category {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+
+/* -- CONTACT PAGE SPECIFIC STYLES -- */
+
+/* Main contact page container */
+#maincontact {
+    min-width: 1000px;
+}
+
+#maincontact #middle {
+    margin-bottom: 20px;
+    font-size: 12pt;
+}
+
+/* Contact page heading */
+#maincontact h1 {
+    font-size: 2.5rem;
+}
+
+/* Form fieldset styling */
+fieldset {
+    border: 2px solid #0f3f5f;     
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+/* Name input field */
+#name {
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1.5px solid #1d587f; 
+    padding: 5px;
+    padding-right: 10rem;
+}
+
+/* Email input field */
+#email {
+    margin-left: 2px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: 1.5px solid #1d587f; 
+    padding: 5px;
+    padding-right: 10rem;
+}
+
+/* Subject input field */
+#subject {
+    margin-left: 2px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: 1.5px solid #1d587f; 
+    padding: 5px;
+    padding-right: 10rem;
+}
+
+/* Text message input field */
+#textarea {
+    margin-left: 2px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    border: 1.5px solid #1d587f; 
+    padding: 5px;
+    padding-right: 25rem;
+    padding-bottom: 10rem;
+}
+
+/* Submit button styling */
+#submitbutton {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    border-radius: 12px;
+    background-color: #9badba;
+    font-size: 11pt;
+}
+
+
+/* -- PROJECTS PAGE SPECIFIC STYLES -- */
+
+/* Main container styling */
+.project-container {
+    margin: 2rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+/* Project general styling */
+.project {
+    display: none;
+    text-align: center;
+}
+
+/* Active project (currently displayed) */
+.project.active {
+    display: block;
+}
+
+/* Project images */
+.project img {
+    max-width: 80%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Project title */
+.project-title {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+}
+
+/* Project description */
+.project-description {
+    margin: 1rem;
+}
+
+/* Project metadata */
+.project-meta {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin: 0.5rem;
+}
+
+/* Journal website link styling */
+#journal a{
+    color: white;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-table;
+    border: 1px solid #99a1c1;
+    border-radius: 12px;
+    padding: 3px 8px;
+    margin:2px;
+    font-size: 10pt;
+}
+
+#journal a:hover{
+    color: white;
+    background-color: var(--accent-color);
+}
+
+/* Container for navigation buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Button styling with hover effects*/
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* -- RESPONSIVE DESIGN FOR SMALLER SCREENS -- */
+
+@media (max-width: 600px) {
+    /* Adjusted header for small screens */
+    header {
+        max-width: 100%;
+    }
+
+    /* Responsive navigation */
+    .header-nav {
+        min-width: 80vw;
+        padding-right: 20px;
+    }
+
+    .header-nav a {
+        padding-right: 4rem;
+    }
+
+    /* Smaller LinkedIn Logo on Index page */
+    #end a {
+        font-size: xx-small;
+    }
+
+    /* Single column for contact info */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* Responsive profile picture */
+    #mypic {
+        width: 100vw; /* 80% of viewport width */
+        max-width: 60vw;
+    }
+
+    /* Smaller footer text */
+    .footerdiv {
+        font-size: 5pt;
+    }
+
+    /* Adjusted contact form */
+    #maincontact {
+        min-width: 590px;
+        padding-right: 10px;
+    }
+
+    /* Smaller fieldset padding to adjust to smaller screens*/
+    fieldset {
+        padding: 5px;
+    }
+
+    /* Responsive textarea */
+    textarea {
+        min-width: 70vw;
+    }
+
+    /* Smaller project title */
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    /* Responsive project images */
+    .project img {
+        min-width: 70vw;
+    }
+}

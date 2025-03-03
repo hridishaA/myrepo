@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Name: Hridisha Arif -->
+<!-- File: Projects.html -->
+<!-- Date Created: 02-16-2025 -->
+<!-- Description: A webpage that contains my projects and publications -->
+<head>
+    <!-- Page title that appears in browser tab -->
+    <title>Hridisha Arif - Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage containing my personal projects and published paper">
+    <meta name="keywords" content="portfolio, projects, publication">
+    <meta name="author" content="Hridisha Arif">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assignment1.css">
+</head>
+<body>
+    <!-- Page header containing site title and navigation -->
+    <header>
+        <h1>My Projects</h1>
+
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Container for all projects -->
+    <div class="project-container">
+        <div class="project active">
+            <h2 class="project-title">Personal Portfolio Website</h2>
+            <img src="./Images/Portfolio.png" alt="Personal Portfolio Website">
+            <p class="project-meta">Technologies: HTML, CSS, JavaScript</p>
+            <p class="project-meta">Completed: March 2025</p>
+            <p class="project-description">
+                Developed a personal portfolio website with 4 webpages containing my portfolio, personal projects,
+                resume, and contact info for CST8285 - Web Programming using HTML. Implemented responsive design using
+                CSS styling and implemented JavaScript for added functionality. 
+            </p>
+        </div>
+
+        <div class="project">
+            <h2 class="project-title">Tool Rental Management Database</h2>
+            <img src="./Images/Database.png" alt="Tool Rental Management Database">
+            <p class="project-meta">Completed: February 2025</p>
+            <p class="project-meta">Technologies: MS Access, MS SQL Server Management Studio, MySQL</p>
+            <p class="project-description">
+                Created a tool rental management database for CST8285 - Database Systems using MS Access for 
+                the front end and SQL Server Management Studio for the back end.
+            </p>
+        </div>
+
+        <div class="project">
+            <h2 class="project-title">Java Program to determine Fitness Levels of users</h2>
+            <img src="./Images/Javaprogram.png" alt="Java Program">
+            <p class="project-meta">Completed: February 2025</p>
+            <p class="project-meta">Technologies: Eclipse IDE, Java, JUnit Testing</p>
+            <p class="project-description">
+                Created a simple java program for CST8285 - Object-oriented Programming to determine fitness levels of users
+                by tracking their daily steps and calories burned.
+            </p>
+        </div>
+
+        <div class="project">
+            <h2 class="project-title">Peer-reviewed journal article based on scientific research on Environmental Microplastic Pollution</h2>
+            <img src="./Images/Journal.png" alt="Elsevier Science Journal">
+            <p class="project-meta">Published: August 2021</p>
+            <p id="journal"><a href="https://doi.org/10.1016/j.scitotenv.2021.146809" style="text-decoration: none;">Link to Journal</a></p>
+            <p class="project-description">
+                Aided in feminist and anticolonial research at the Civic Laboratory for Environmental Action Research
+                (CLEAR lab) at Memorial University of Newfoundland that specializes in monitoring plastic pollution. 
+
+                Published a peer-reviewed article on Elsevier. The study aimed to assess the abundance and types of plastic pollution in the surface waters of the Eastern Arctic, 
+                specifically within Inuit Nunangat. It sought to understand the sources and distribution of plastic debris in this region. 
+                Additionally, the research emphasized the importance of integrating Indigenous knowledge with scientific methods to 
+                enhance environmental monitoring and stewardship.
+
+            </p>
+        </div>
+
+        <!-- Navigation buttons for the project slideshow -->
+        <div class="buttons">
+            <button onclick="prev()">Previous</button>
+            <button onclick="next()">Next</button>
+        </div>
+    </div>
+
+    <!-- Page footer with copyright information -->
+    <div class="footerdiv">
+        <footer>
+            <p>&copy; Hridisha Arif, 2025. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript to switch between projects -->
+
+    <script>
+
+        // Get all projects
+        let projects = document.getElementsByClassName('project');
+        let current = 0;
+
+        function next() {
+            // Hide current project
+            projects[current].classList.remove('active');
+            // Move to next project
+            current = current + 1;
+            // If at end, go back to first project
+            if (current >= projects.length) {
+                current = 0;
+            }
+            // Show new project
+            projects[current].classList.add('active');
+        }
+
+        function prev() {
+            // Hide current project
+            projects[current].classList.remove('active');
+            // Move to previous project
+            current = current - 1;
+            // If at start, go to last project
+            if (current < 0) {
+                current = projects.length - 1;
+            }
+            // Show new project
+            projects[current].classList.add('active');
+        }
+    </script>
+</body>
+</html>
